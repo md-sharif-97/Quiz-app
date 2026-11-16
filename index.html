@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main id="quiz-container">
+
+        <!-- start screen -->
+
+        <section id="start-screen">
+            <div id="top-section">
+                <img class="quiz-icon" src="assets/education.png" alt="">
+                <h1 class="quiz-title">Knowledge Quiz</h1>
+                <p class="quiz-desc">Test Your General Knowledge With Multiple-Choice Question</p>
+            </div>
+
+            <div id="buttom-section">
+                <div class="box">
+                    <div>
+                        <img class="img-sizing" src="assets/question.png" alt="">
+                    </div>
+                    <p>10</p>
+                    <p>Questions</p>
+                </div>
+
+                <div class="box">
+                    <img class="img-sizing" src="assets/time.png" alt="">
+                    <p>1 Minute</p>
+                    <p>Per Questions</p>
+                </div>
+
+                <div class="box">
+                    <img class="img-sizing" src="assets/trophy.png" alt="">
+                    <p>Highest <br>Score Win</p>
+                </div>
+            </div>
+            <button id="start-btn"> ▶ Start Quiz</button>
+        </section>
+
+
+        <!-- Question screen -->
+
+    <section class="question-screen" id="questionScreen">
+
+    <div class="quiz-header">
+        <div class="question-nmbr">
+            Question <span  id="currentQuestion">1</span> of 10
+        </div>
+
+
+        <div class="question-timer">
+            <img src="assets/time.png" alt="">
+            <span id="timer">60</span>
+        </div>
+    </div>
+
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+
+    </div>
+
+
+    <div class="score-box">
+        Score: <span id="score">0</span>
+    </div>
+
+    <!-- question part -->
+
+    <div class="question-box">
+
+        <h2 id="question-text">
+            Which language is primarily used for structuring web pages?
+        </h2>
+
+    </div>
+
+    <div class="options-container">
+
+        <button class="option-btn">
+            <span class="option-letter">A</span>
+            Python
+        </button>
+
+        <button class="option-btn">
+            <span class="option-letter">B</span>
+            HTML
+        </button>
+
+        <button class="option-btn">
+            <span class="option-letter">C</span>
+            CSS
+        </button>
+
+        <button class="option-btn">
+            <span class="option-letter">D</span>
+            JavaScript
+        </button>
+
+    </div>
+
+    <!-- Next Button -->
+
+    <button id="nextBtn">
+        Next Question →
+    </button> 
+
+</section>
+
+<!-- fjafj'akfljs'a -->
+
+<!-- Result Screen -->
+<section class="result-screen" id="resultScreen">
+
+    <div class="result-icon">🏆</div>
+
+    <h1>Quiz Completed!</h1>
+    <p class="result-message">Great job! Here is your result.</p>
+
+    <div class="result-score">
+        <h2 id="finalScore">0/10</h2>
+        <p id="scorePercentage">0% Accuracy</p>
+    </div>
+
+    <div class="result-details">
+
+        <div class="result-box">
+            <h3 id="totalQuestions">10</h3>
+            <p>Total Questions</p>
+        </div>
+
+        <div class="result-box">
+            <h3 id="correctAnswers">0</h3>
+            <p>Correct Answers</p>
+        </div>
+
+        <div class="result-box">
+            <h3 id="wrongAnswers">0</h3>
+            <p>Wrong Answers</p>
+        </div>
+
+    </div>
+
+    <button id="restartBtn">↻ Play Again</button>
+
+</section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
